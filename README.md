@@ -29,6 +29,6 @@
 
 ## 👩‍💻 Built By  
 
-**Plastic Patrol** was developed by **Alexia May | Alan Gardiner | Manith Hettiarachchilage | Matt Wilkes | Ray Brown ** during a one day Hackathon, in collaboration with Makers and [Our Only World](https://www.ouronlyworld.org.uk/).  
+**Plastic Patrol** was developed by **Alexia Maynart | Alan Gardiner | Manith Hettiarachchilage | Matt Wilkes | Ray Brown ** during a one day Hackathon, in collaboration with Makers and [Our Only World](https://www.ouronlyworld.org.uk/).  
 
 🌍 *Let's work together to keep our oceans clean!* 🌊✨  
