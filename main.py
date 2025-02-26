@@ -5,8 +5,8 @@ import time
 import math
 from settings import Settings
 from user import User
-from obstacle import Obstacle
-from life import Life
+from sealife import Obstacle
+from plastics import Life
 from button import Button
 
 class TechFighters:
@@ -58,18 +58,30 @@ class TechFighters:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            # Movements of the net controlled by the player
             elif event.type == pygame.KEYDOWN and self.game_active:
+                # When a key is pressed
                 if event.key == pygame.K_RIGHT:
                     self.user.moving_right = True
                     self.user.facing_right = True
                 elif event.key == pygame.K_LEFT:
                     self.user.moving_left = True
                     self.user.facing_right = False
+                elif event.key == pygame.K_DOWN:
+                    self.user.moving_down = True
+                elif event.key == pygame.K_UP:
+                    self.user.moving_up = True
+                # When the keys are not pressed
             elif event.type == pygame.KEYUP and self.game_active:
                 if event.key == pygame.K_RIGHT:
                     self.user.moving_right = False
                 elif event.key == pygame.K_LEFT:
                     self.user.moving_left = False
+                elif event.key == pygame.K_UP:
+                    self.user.moving_up = False
+                elif event.key == pygame.K_DOWN:
+                    self.user.moving_down = False
+                # Using the mouse
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
                 if self.button.rect.collidepoint(mouse_pos) and not self.game_active:
@@ -140,7 +152,7 @@ class TechFighters:
     def _score(self):
         self.distance += self.settings.speed
         font = pygame.font.Font(None, 36)  # Use default font, size 36
-        distance_text = font.render(f"Distance: {self.distance}", True, (255, 255, 255))  # White color
+        distance_text = font.render(f"Points: {self.distance}", True, (255, 255, 255))  # White color
         self.screen.blit(distance_text, (10, 10))  # Top-left corner
         
     def end_game(self):
@@ -160,6 +172,8 @@ class TechFighters:
             self.user.rect.y = 1
             self.user.moving_left = False
             self.user.moving_right = False
+            self.user.moving_up = False
+            self.user.moving_down = False
             self.settings.reset_game()
             self.game_active = False
     

@@ -4,9 +4,9 @@ class Settings:
         # self.screen_height = 900
 
         self.screen_width = 900
-        self.screen_height = 600
+        self.screen_height = 560
         self.speed = 1
-        # Obstacle settings = bugs ythe player has to avoid
+        # Sealife settings = fishes the player has to avoid collecting in the net
         self.obstacle_speed = 2.0
         self.obstacle_width = 10
         self.obstacle_height = 10 
@@ -24,7 +24,7 @@ class Settings:
         self.screen_width = 560
         self.screen_height = 900
         self.speed = 1
-        # Obstacle settings = bugs ythe player has to avoid
+        # Obstacle settings = bugs the player has to avoid
         self.obstacle_speed = 2.0
         self.obstacle_width = 10
         self.obstacle_height = 10 
