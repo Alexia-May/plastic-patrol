@@ -3,47 +3,48 @@
 ## Net
 
 ### Status
-- Generated in the middlw of the screen.
+- Generated in the middle of the screen.
 - Can be moved in 4 directions.
 
 ### Next steps
 - Edit movement parameters so that the net can be moved via mouse / touchscreen.
 
-## Fishes
+## Sealife
 
 ### Status
 
-- Generated at the bottom of the screen.
-- Move up 
+- Fishes generated on the left side of the screen.
+- Move to the right
 
 ### Next steps
 
-- Generated on the side of the screen
-- Moves laterally
+- Other type of sealife (e.g. static starfishes, fishes moving from the right to the left)
 
 ## Plastic
 
 ### Status
-- Generated at the bottom of the screen.
-- Move up 
+- Generated at the top of the screen.
+- Move down
 
 ## Next steps
-- Generated at the top of the screen.
-- Moves down.
+
 
 ## Gameplay
 
 ### Status
-- Points in distance
-- Touching a fish will change the location of the net (up)
-- Touching plastic will change the location of the net (down)
-- Game over when the net touches the bottom of the screen
-- No lives displayed
-
-### Next steps
+- User's lives displayed
 - Touching plastic earns points
 - Touching fishes lose lives
+- Collision does not change position of the net
 - Losing X lives = gameover
+
+
+
+### Next steps
+- Reset parameters after game over
+- informational fact after game over, then new game option
+- improve readability of text
+
 
 ## Code
 
